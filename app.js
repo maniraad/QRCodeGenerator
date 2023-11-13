@@ -8,7 +8,7 @@ const img = $.querySelector('img');
 
 
 const showQRCode = () => {
-    let inputValue = input.value
+    let inputValue = input.value.trim()
     if (inputValue) {
         generatorBtn.innerHTML = "Generating QR Coding"
 
@@ -27,7 +27,7 @@ addEventListener('keypress', (event) => {
     }
 })
 input.addEventListener('keydown',()=>{
-    if (!input.value) {
+    if (!input.value.trim()) {
         card.classList.remove('active')
         generatorBtn.innerHTML = "QR Code Generator"
     }

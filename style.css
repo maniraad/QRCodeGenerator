@@ -112,6 +112,18 @@ button span {
     transition: 300ms;
 }
 
+button:active {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+
+button:active {
+    outline: 0;
+}
+
 .qr-code {
     opacity: 0;
     display: flex;
@@ -136,7 +148,7 @@ button span {
 @media (max-width: 430px) {
     .card.active {
         height: 510px;
-    }   
+    }
 
     .form :where(input, button) {
         height: 48px;

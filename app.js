@@ -26,3 +26,9 @@ addEventListener('keypress', (event) => {
         showQRCode()
     }
 })
+input.addEventListener('keydown',()=>{
+    if (!input.value) {
+        card.classList.remove('active')
+        generatorBtn.innerHTML = "QR Code Generator"
+    }
+})
